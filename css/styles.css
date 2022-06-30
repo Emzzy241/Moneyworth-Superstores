@@ -88,3 +88,46 @@ body{
 }
 
 /* the menu button styles  */
+
+#menu-btn{
+    display: none;
+}
+
+/* Styling the searching area  */
+
+.header .search-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+
+/* The search button is our label, so now we want to change the color 
+when hovering over it  */
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color:var(--black);
+    cursor:pointer;
+}
+
+.header .search-form label:hover{
+    color: var(--orange);
+}
