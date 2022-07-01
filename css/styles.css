@@ -36,7 +36,7 @@ body {
 
 /* Styling all the elements with the class btn */
 
-.btn{
+.btn {
     margin-top: 1rem;
     display: inline-block;
     padding: 0.8rem 3rem;
@@ -45,9 +45,10 @@ body {
     border: 0.2rem solid var(--black);
     color: var(--black);
     cursor: pointer;
+    background: none;
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--orange);
     color: #fff;
 }
@@ -173,9 +174,9 @@ when hovering over it  */
     background: #fff;
 }
 
-.header .shopping-cart.active{
+.header .shopping-cart.active {
     right: 2rem;
-    transition: .4s linear ;
+    transition: .4s linear;
 }
 
 .header .shopping-cart .box {
@@ -219,13 +220,13 @@ when hovering over it  */
     font-size: 1.6rem;
 }
 
-.header .shopping-cart .box .content .quantity{
+.header .shopping-cart .box .content .quantity {
     padding-left: 1rem;
 }
 
 /* Styling the total */
 
-.header .shopping-cart .total{
+.header .shopping-cart .total {
     font-size: 2.5rem;
     padding: 1rem 0;
     text-align: center;
@@ -233,8 +234,120 @@ when hovering over it  */
 }
 
 
-.header .shopping-cart .btn{
+.header .shopping-cart .btn {
     display: block;
     text-align: center;
     margin: 1rem;
+}
+
+/* styling the login section  */
+
+.header .login-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+}
+
+
+.header .login-form.active {
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .login-form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login-form .box {
+    width: 100%;
+    margin: 0.7rem 0;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    color: var(--light-color);
+}
+
+.header .login-form p a {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querries  */
+/* This is for responsiveness on all devices  */
+
+@media (max-width : 999px) {
+
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 7rem;
+    }
 }
