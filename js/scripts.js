@@ -2,8 +2,11 @@ let searchForm = document.querySelector('.search-form');
 
 // showing the search window when we click on search
 
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active'); 
+document.querySelector('#search-btn').onclick = () => {
+    searchForm.classList.toggle('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
 }
 
 
@@ -11,9 +14,12 @@ let shoppingCart = document.querySelector('.shopping-cart');
 
 // showing the shopping cart window when we click on search
 
-document.querySelector('#cart-btn').onclick = () =>{
-    shoppingCart.classList.toggle('active'); 
-} 
+document.querySelector('#cart-btn').onclick = () => {
+    shoppingCart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
 
 
 // showing the login window when we click on search
@@ -22,6 +28,31 @@ document.querySelector('#cart-btn').onclick = () =>{
 let loginForm = document.querySelector('.login-form');
 
 
-document.querySelector('#login-btn').onclick = () =>{
-    loginForm.classList.toggle('active'); 
-} 
+document.querySelector('#login-btn').onclick = () => {
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+// Making the menu bar show when our width is reduced for responsiveness
+
+let navbar = document.querySelector('.navbar');
+
+
+document.querySelector('#menu-btn').onclick = () => {
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+// Making our searchForm, cart, and navbar disaapear when user clicks on an empty space in the website 
+
+window.onscroll = () => {
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+

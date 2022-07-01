@@ -342,12 +342,55 @@ when hovering over it  */
 /* media querries  */
 /* This is for responsiveness on all devices  */
 
-@media (max-width : 999px) {
+@media (max-width:991px) {
 
     html {
-        font-size: 62.5%;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-        scroll-padding-top: 7rem;
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: 0.5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: 0.4s linear;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .header .search-form {
+        width: 90%;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+
     }
 }
