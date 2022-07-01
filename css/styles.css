@@ -136,3 +136,23 @@ when hovering over it  */
 .header .search-form label:hover{
     color: var(--orange);
 }
+
+/* Styling the shopping cart for customers  */
+
+.header .shopping-cart{
+    position: absolute;
+    top: 110% 2rem;
+    padding: 1rem;
+
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: #fff;
+}
+
+.header .shopping-cart .box{
+    display: flex;
+     align-items: center;
+     gap: 1rem;
+     position: ewl';
+}/////// 
