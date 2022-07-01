@@ -1,42 +1,64 @@
 @import url('https://googleapis.com/css2?family=poppins:wght@100;300,400;500;600&display=swap');
 
 
-:root{
-    --orange:#ff7800;
-    --black:#130f40;
-    --light-color:#666;
-    --box-shadow:0 .5rem 1rem rgba(0, 0, 0, 0.1);
-    --border:.2rem solid rgba(0, 0, 0, 0.1);
-    --outline:.1rem solid rgba(0, 0, 0, 0.1);
-    --outline-hover:.2rem solid var(--black);
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    --border: .2rem solid rgba(0, 0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: .2rem solid var(--black);
 }
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-transform: capitalize;
     text-decoration: none;
-    transition: all .2s linear;   
+    transition: all .2s linear;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
 
-body{
+body {
     background-color: #eee;
+}
+
+/* Styling all the elements with the class btn */
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--orange);
+    color: #fff;
 }
 
 /* Styling our header section  */
 
-.header{
+.header {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -46,29 +68,29 @@ body{
     box-shadow: var(--box-shadow);
 }
 
-.header .logo{
+.header .logo {
     font-size: 2.5rem;
     font-weight: bolder;
     color: var(--black);
 }
 
-.header .logo i{
+.header .logo i {
     color: var(--orange);
 }
 
-.header .navbar a{
+.header .navbar a {
     font-size: 1.7rem;
     margin: 0 1rem;
-    color: var(--black );
+    color: var(--black);
 }
 
-.header .navbar a:hover{
+.header .navbar a:hover {
     color: var(--orange);
 }
 
 /* Styling the header icons section  */
 
-.header .icons div{
+.header .icons div {
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4.5rem;
@@ -81,7 +103,7 @@ body{
     text-align: center;
 }
 
-.header .icons div:hover{
+.header .icons div:hover {
     background: var(--orange);
     color: #fff;
 
@@ -89,15 +111,16 @@ body{
 
 /* the menu button styles  */
 
-#menu-btn{
+#menu-btn {
     display: none;
 }
 
 /* Styling the searching area  */
 
-.header .search-form{
+.header .search-form {
     position: absolute;
-    top: 110%; right: -110%;
+    top: 110%;
+    right: -110%;
     width: 50rem;
     height: 5rem;
     background: #fff;
@@ -108,12 +131,12 @@ body{
     box-shadow: var(--box-shadow);
 }
 
-.header .search-form.active{
+.header .search-form.active {
     right: 2rem;
     transition: .4s linear;
 }
 
-.header .search-form input{
+.header .search-form input {
     height: 100%;
     width: 100%;
     background: none;
@@ -126,33 +149,92 @@ body{
 /* The search button is our label, so now we want to change the color 
 when hovering over it  */
 
-.header .search-form label{
+.header .search-form label {
     font-size: 2.2rem;
     padding-right: 1.5rem;
-    color:var(--black);
-    cursor:pointer;
+    color: var(--black);
+    cursor: pointer;
 }
 
-.header .search-form label:hover{
+.header .search-form label:hover {
     color: var(--orange);
 }
 
 /* Styling the shopping cart for customers  */
 
-.header .shopping-cart{
+.header .shopping-cart {
     position: absolute;
-    top: 110% 2rem;
+    top: 110%;
+    right: -110%;
     padding: 1rem;
-
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    width: 30rem;
+    width: 35rem;
     background: #fff;
 }
 
-.header .shopping-cart .box{
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: .4s linear ;
+}
+
+.header .shopping-cart .box {
     display: flex;
-     align-items: center;
-     gap: 1rem;
-     position: ewl';
-}/////// 
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img {
+    height: 10rem;
+}
+
+.header .shopping-cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform:
+        translateY(-50%);
+}
+
+
+.header .shopping-cart .box .fa-trash:hover {
+    color: var(--orange);
+}
+
+/* Styling our content h3; the h3 for products  */
+
+.header .shopping-cart .box .content h3 {
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span {
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.header .shopping-cart .box .content .quantity{
+    padding-left: 1rem;
+}
+
+/* Styling the total */
+
+.header .shopping-cart .total{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+
+.header .shopping-cart .btn{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
