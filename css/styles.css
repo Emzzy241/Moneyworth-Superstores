@@ -1,5 +1,5 @@
-@import url('https://googleapis.com/css2?family=poppins:wght@100;300,400;500;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 :root {
     --orange: #ff7800;
@@ -32,6 +32,10 @@ html {
 
 body {
     background-color: #eee;
+}
+
+section{
+    padding: 2rem 9%;
 }
 
 /* Styling all the elements with the class btn */
@@ -288,7 +292,39 @@ when hovering over it  */
     text-decoration: underline;
 }
 
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
 
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3{
+    color: var(--black);
+    font-size: 3rem;
+}
+
+
+.home .content h3 span{
+    color: var(--orange);
+    
+}
+
+.home .content p{
+    color: var(--light-color);
+    font-size: 1.7rem ;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 
 
 
@@ -350,6 +386,10 @@ when hovering over it  */
 
     .header {
         padding: 2rem;
+    }
+
+    section{
+        padding: 2rem ;
     }
 }
 
