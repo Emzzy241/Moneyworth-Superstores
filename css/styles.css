@@ -519,6 +519,46 @@ when hovering over it  */
     font-size: 1.7rem;
 }
 
+/* Styling the recommended blogs section  */
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box{
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+
+.blogs .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
