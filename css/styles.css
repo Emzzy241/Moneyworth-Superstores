@@ -718,6 +718,51 @@ when hovering over it  */
     line-height: 1.8;
 }
 
+.diaper .diaper-slider {
+    padding: 1rem;
+}
+
+.diaper .diaper-slider:first-child {
+    margin-bottom: 2rem;
+}
+
+.diaper .diaper-slider .box {
+    background: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+}
+
+
+.diaper .diaper-slider .box:hover {
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.diaper .diaper-slider .box img {
+    height: 20rem;
+}
+
+.diaper .diaper-slider .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.diaper .diaper-slider .box .price {
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+}
+
+.diaper .diaper-slider .box .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+    padding: 0.5rem 0;
+}
 
 
 
