@@ -681,8 +681,6 @@ when hovering over it  */
 }
 
 /* styling the baby.html section  */
-/* first section  baby.html: baby diapers  */
-
 
 .baby {
     display: flex;
@@ -764,8 +762,89 @@ when hovering over it  */
     padding: 0.5rem 0;
 }
 
+/* Styling the foods.html section  */
 
 
+.foods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.foods .content {
+    text-align: center;
+    width: 60rem;
+}
+
+.foods .content h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+
+
+.foods .content h3 span {
+    color: var(--orange);
+
+}
+
+.foods .content p {
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+.pasta .pasta-slider {
+    padding: 1rem;
+}
+
+.pasta .pasta-slider:first-child {
+    margin-bottom: 2rem;
+}
+
+.pasta .pasta-slider .box {
+    background: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+}
+
+
+.pasta .pasta-slider .box:hover {
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.pasta .pasta-slider .box img {
+    height: 20rem;
+}
+
+.pasta .pasta-slider .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.pasta .pasta-slider .box .price {
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+}
+
+.pasta .pasta-slider .box .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+    padding: 0.5rem 0;
+}
 
 
 

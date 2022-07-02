@@ -124,3 +124,28 @@ var swiper = new Swiper(".diaper-slider", {
       },
     },
   });
+
+
+
+// swiper for food.html 
+  
+var swiper = new Swiper(".pasta-slider", {    
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    centeredSlides: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1020: {
+        slidesPerView: 3,
+      },
+    },
+  });
