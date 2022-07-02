@@ -680,6 +680,43 @@ when hovering over it  */
     color: var(--orange);
 }
 
+/* styling the baby.html section  */
+/* first section  baby.html: baby diapers  */
+
+
+.baby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.baby .content {
+    text-align: center;
+    width: 60rem;
+}
+
+.baby .content h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+
+
+.baby .content h3 span {
+    color: var(--orange);
+
+}
+
+.baby .content p {
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 
 
 
