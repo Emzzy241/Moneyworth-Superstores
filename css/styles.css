@@ -523,28 +523,28 @@ when hovering over it  */
 
 .blogs .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.blogs .box-container .box{
+.blogs .box-container .box {
     overflow: hidden;
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
     background: #fff;
 }
 
-.blogs .box-container .box img{
+.blogs .box-container .box img {
     height: 25rem;
     width: 100%;
     object-fit: cover;
 }
 
-.blogs .box-container .box .content{
+.blogs .box-container .box .content {
     padding: 2rem;
 }
 
-.blogs .box-container .box .content .icons{
+.blogs .box-container .box .content .icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -553,23 +553,23 @@ when hovering over it  */
     border-bottom: var(--border);
 }
 
-.blogs .box-container .box .content .icons a{
+.blogs .box-container .box .content .icons a {
     color: var(--light-color);
     font-size: 1.5rem;
 }
 
 
-.blogs .box-container .box .content .icons a:hover{
+.blogs .box-container .box .content .icons a:hover {
     color: var(--black);
 }
 
-.blogs .box-container .box .content .icons a i{
+.blogs .box-container .box .content .icons a i {
     color: var(--orange);
     padding-right: 0.5rem;
 }
 
 
-.blogs .box-container .box .content h3{
+.blogs .box-container .box .content h3 {
     line-height: 1.8;
     color: var(--black);
     font-size: 2.2rem;
@@ -577,7 +577,7 @@ when hovering over it  */
 }
 
 
-.blogs .box-container .box .content p{
+.blogs .box-container .box .content p {
     line-height: 1.8;
     color: var(--light-color);
     font-size: 1.5rem;
@@ -586,12 +586,99 @@ when hovering over it  */
 
 /* Styling the footer section  */
 
+.footer {
+    background: #fff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
 
 
+.footer .box-container .box h3 i {
+    color: var(--orange);
+}
 
 
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+    color: var(--orange);
+    padding-right: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: 0.2rem;
+    background: #eee;
+    text-align: center;
+}
 
 
+.footer .box-container .box .share a:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+
+.footer .box-container .box .email{
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 3rem;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-top: var(--border);
+}
+
+.footer .credit span{
+    color: var(--orange);
+}
 
 
 
@@ -696,6 +783,11 @@ when hovering over it  */
 
     .heading {
         font-size: 2.5rem;
+    }
+
+    
+    .footer{
+        text-align: center;
     }
 
 }
