@@ -44,7 +44,6 @@ Licensed under the GNU General Public License
 
 ## Contact
 * Email Address: emzzyoluwole@gmail.com
-* Twitter Handle: (@Emzzy241)
-* Github Handle: (Emzzy241)
-* Instagram Handle: (Emmanuel)
-
+* Twitter Handle: ([@Emzzy241](https://twitter.com/Emzzy241))
+* Github Handle: ([Emzzy241](https://github.com/Emzzy241))
+* Instagram Handle: ([Emmanuel](https://www.instagram.com/emmanuel.9944/))
